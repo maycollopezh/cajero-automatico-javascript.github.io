@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Convergence&family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    
+    <div id="inicio_de_sesion">
+
+    <h1 class="datos_del_usuario">Cajero Automático</h1>
+
+    <h2 class="datos_del_usuario">Ingresa tus datos</h2>
+
+    <div class="form">
+        <input type="text" id="usuario" class="form__input" autocomplete="off" placeholder=" ">
+        <label for="usuario" class="form__label">Usuario</label>
+    </div>
+
+    <div class="form">
+        <input type="text" id="correo_electronico" class="form__input" autocomplete="off" placeholder=" ">
+        <label for="correo_electronico" class="form__label">Correo electrónico</label>
+    </div>
+
+    <div class="form">
+        <input type="password" id="contraseña" class="form__input" autocomplete="off" placeholder=" ">
+        <label for="contraseña" class="form__label">Contraseña</label>
+    </div>
+
+    <button id="boton_iniciar_sesion" class="custom-btn btn-3" onclick="inicioDeSesion()"><span>Iniciar sesión</span></button>
+
+    </div>
+
+
+
+    <div id="cuenta" style="display: none;">
+
+        <h1 class="datos_del_usuario">Cajero Automático</h1>
+        <h2 id="nombre_usuario" class="datos_del_usuario"></h2>
+        <div id="saldo_disponible"></div>
+        
+        <h3 class="cajero_automatico_entradas">Cantidad a depositar:</h3>
+        <input type="text" id="cantidad_depositar" class="form__input_2" placeholder=" ">
+        <button id="boton_depositar" class="custom-btn btn-3" onclick="depositar()"><span>Depositar</span></button>
+
+
+        <h3 class="cajero_automatico_entradas">Cantidad a retirar:</h3>
+        <input type="text" id="cantidad_retirar" class="form__input_2" placeholder=" ">
+        <button id="boton_retirar" class="custom-btn btn-3" onclick="retirar()"><span>Retirar</span></button>
+
+        <div id="consulta_salir">
+
+        <div class="cajero_automatico_entradas" id="consultar_saldo">
+            <button id="boton_consultar_saldo" class="custom-btn btn-3" onclick="consultarSaldo()"><span>Consultar saldo</span></button>
+        </div>
+
+        <div class="cajero_automatico_entradas" id="salir">
+            <button id="boton_salir" class="custom-btn btn-3" onclick="salir()"><span>Salir</span></button>
+        </div>
+        
+        </div>
+
+    </div>
+
+    
+
+
+    <script src="./index2.js"></script>
+</body>
+</html>
